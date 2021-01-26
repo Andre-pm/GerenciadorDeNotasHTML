@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rhodium+Libre&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Gerenciamento de Notas</title>
+</head>
+
+<body>
+    <header>
+        <!--Menu Celular-->
+        <div id="fundoBordaCell">
+            <div id="bordaCell">
+                <div id="circuloCel"><img id="logo" src="../assets/Logo.png" onclick="navBar()"></div>
+                    <ul id="listaMobile">
+                        <li id="liMobile"><a href="./pages/cad_gab.html">Cadastrar Gabarito</a></li>
+                        <li id="liMobile"><a href="./pages/cad_resp.html">Cadastrar Respostas</a></li>
+                        <li id="liMobile"> <a href="./pages/nota_f.html">Notas</a></li>
+                        <li id="liMobile"><a href="./pages/alu_apr.html">Alunos Aprovados</a></li>
+                        <li id="liMobile"><a href="./pages/cad_alu.html">Cadastrar Alunos</a></li>
+                    </ul>
+            </div>
+        </div>
+
+
+        <!--Menu Navegador-->
+        <ul>
+            <div id="borda">
+                <div id="circulo"><a href="#Home">
+                        <img id="logo" src="./assets/Logo.png">
+                    </a></div>
+            </div>
+            <li><img id="Icon_Bar" src="./assets/Cad_Gab.png" alt="">
+                <a href="./pages/cad_gab.html">Cadastrar Gabarito</a>
+            </li>
+
+            <li><img id="Icon_Bar" src="./assets/Cad_Resp.png" alt="">
+                <a href="./pages/cad_resp.html">Cadastrar Respostas</a>
+            </li>
+
+            <li><img id="Icon_Bar" src="./assets/Nota_Final.png" alt="">
+                <a href="./pages/nota_f.html">Notas</a>
+            </li>
+
+            <li><img id="Icon_Bar" src="./assets/Alu_Apro.png" alt="">
+                <a href="./pages/alu_apr.html">Alunos Aprovados</a>
+            </li>
+
+            <li id="Cad_Alu"><img id="Icon_Bar" src="./assets/Cad_Alu.png" alt="">
+                <a href="./pages/cad_alu.html">Cadastrar Alunos</a>
+            </li>
+        </ul>
+
+    </header>
+    <main>
+        <div id="Home">
+            <h2 class="Titulo">Sistema de Gerenciamento de Notas</h2>
+            <h3>Para começar <mark> cadastre um Aluno(a),</mark> após <mark> cadastre o gabarito</mark> de uma prova.
+                <br>
+                A resposta do aluno(a) deve ser cadastrada na aba <mark> Cadastrar Respostas,</mark> assim o sistema irá
+                calcular a nota de cada um individualmente. <br>
+                As notas de cada aluno poderão ser visualizadas na aba <mark> Notas.</mark> <br>
+                Alunos com média maior que 7 ficaram na aba <mark> Alunos Aprovados.</mark>
+            </h3>
+
+
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="./js/navBar.js"></script>
+</body>
+
+</html>

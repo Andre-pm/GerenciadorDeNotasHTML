@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rhodium+Libre&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Cadastro de Alunos</title>
+</head>
+
+<body>
+    <header>
+        <!--Menu Celular-->
+        <div id="fundoBordaCell">
+            <div id="bordaCell">
+                <div id="circuloCel"><img id="logo" src="../assets/Logo.png" onclick="navBar()"></div>
+                <ul id="listaMobile">
+                    <li id="liMobile"><a href="../pages/cad_gab.html">Cadastrar Gabarito</a></li>
+                    <li id="liMobile"><a href="../pages/cad_resp.html">Cadastrar Respostas</a></li>
+                    <li id="liMobile"> <a href="../pages/nota_f.html">Notas</a></li>
+                    <li id="liMobile"><a href="../pages/alu_apr.html">Alunos Aprovados</a></li>
+                    <li id="liMobile"><a href="../pages/cad_alu.html">Cadastrar Alunos</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!--Menu Navegador-->
+        <ul>
+            <div id="borda">
+                <div id="circulo"><a href="../index.html">
+                        <img id="logo" src="../assets/Logo.png">
+                    </a></div>
+            </div>
+            <li><img id="Icon_Bar" src="../assets/Cad_Gab.png" alt=""><a href="cad_gab.html">Cadastrar Gabarito</a></li>
+            <li><img id="Icon_Bar" src="../assets/Cad_Resp.png" alt=""><a href="cad_resp.html">Cadastrar Respostas</a>
+            </li>
+            <li><img id="Icon_Bar" src="../assets/Nota_Final.png" alt=""> <a href="nota_f.html">Nota Final</a></li>
+            <li><img id="Icon_Bar" src="../assets/Alu_Apro.png" alt=""> <a href="alu_apr.html">Alunos Aprovados</a></li>
+            <li id="Cad_AluSel"><img id="Icon_Bar" src="../assets/Cad_Alu.png" alt=""><a href="#">Cadastrar Alunos</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <div id="Home">
+            <form action="" method="POST" id="form_CadGab">
+                <h3>Cadastrar Alunos(a)</h3>
+                <label for="inNomeAlu">Nome Completo</label>
+                <br>
+                <input type="text" name="NomeAluno" id="inNomeAlu" required>
+                <br><br>
+                <label for="inDNAlu">Data de Nascimento</label>
+                <br>
+                <input type="date" name="DataNascimento" id="inDNAlu" required>
+                <br><br>
+                <label for="inCidAlu">Endereço</label>
+                <br>
+                <input type="number" name="CEP" id="inCepAlu" placeholder="CEP" required>
+                <br>
+                <input type="text" name="Cidade" id="inCidAlu" placeholder="Cidade" required>
+                <br>
+                <input type="text" name="Bairro" id="inBaiAlu" placeholder="Bairro" required>
+                <br>
+                <input type="text" name="Rua" id="inRuaAlu" placeholder="Rua" required>
+                <br>
+                <input type="text" name="Complemento" id="inCompAlu" placeholder="Complemento" required>
+                <br><br>
+                <input id="envGab" type="submit" value="Cadastrar">
+
+            </form>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="../js/cep.js"></script>
+    <script src="../js/navBar.js"></script>
+</body>
+
+</html>

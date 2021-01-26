@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rhodium+Libre&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Cadastrar Gabarito</title>
+</head>
+
+<body>
+    <header>
+      <!--Menu Celular-->
+      <div id="fundoBordaCell">
+        <div id="bordaCell">
+            <div id="circuloCel"><img id="logo" src="../assets/Logo.png" onclick="navBar()"></div>
+                <ul id="listaMobile">
+                    <li id="liMobile"><a href="../pages/cad_gab.html">Cadastrar Gabarito</a></li>
+                    <li id="liMobile"><a href="../pages/cad_resp.html">Cadastrar Respostas</a></li>
+                    <li id="liMobile"> <a href="../pages/nota_f.html">Notas</a></li>
+                    <li id="liMobile"><a href="../pages/alu_apr.html">Alunos Aprovados</a></li>
+                    <li id="liMobile"><a href="../pages/cad_alu.html">Cadastrar Alunos</a></li>
+                </ul>
+        </div>
+    </div>
+
+    <!--Menu Navegador-->
+        <ul>
+            <div id="borda">
+                <div id="circulo"><a href="../index.html"><img id="logo" src="../assets/Logo.png"></a></div>
+            </div>
+            <li id="Selec"><img id="Icon_Bar" src="../assets/Cad_Gab.png" alt=""><a href="#">Cadastrar Gabarito</a></li>
+            <li><img id="Icon_Bar" src="../assets/Cad_Resp.png" alt=""><a href="cad_resp.html">Cadastrar Respostas</a>
+            </li>
+            <li><img id="Icon_Bar" src="../assets/Nota_Final.png" alt=""> <a href="nota_f.html">Nota Final</a></li>
+            <li><img id="Icon_Bar" src="../assets/Alu_Apro.png" alt=""> <a href="alu_apr.html">Alunos Aprovados</a></li>
+            <li id="Cad_Alu"><img id="Icon_Bar" src="../assets/Cad_Alu.png" alt=""><a href="cad_alu.html">Cadastrar Alunos</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <div id="Home">
+            <form action="" method="POST" id="form_CadGab">
+                <h3>Cadastrar Gabarito</h3>
+                <label for="inQuestProv">Insira a Quantidade de Questões da Prova</label>
+                <br>
+                <input type="number" name="NumeroDeQuestoes" id="inQuestProv" step="1" placeholder="Ex: 20 Questões" min="1" required>
+                <br><br>
+                <label  for="inAltDeQuestoes">Insira a Quantidade de Alternativas por Questão</label>
+                <br>
+                <input  type="number" name="AltDeQuestoes" id="inAltQuestProv" step="1" placeholder="Ex: 4 - (A,B,C,D)" min="1" max='26' required>
+                <br><br>
+                <label  for="inNomeProva">Insira o Nome da Prova</label>
+                <br>
+                <input  type="text" name="NomeProva" id="inNomeProva" placeholder="Ex: Prova de História - 1" required>
+                <br><br>
+
+                <div id="prova" hidden>
+                    <table id="tabela">
+                        <tr>
+                            <td></td>
+                        </tr>
+                    </table>
+                    <input id="envGab" type="submit" value="Cadastrar Gabarito">
+                </div>
+
+            </form>
+        </div>
+
+    </main>
+    <footer>
+
+    </footer>
+    <script src="../js/addQuestao.js"></script>
+    <script src="../js/navBar.js"></script>
+</body>
+
+</html>

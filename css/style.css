@@ -1,0 +1,275 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Rhodium Libre', serif;
+    
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 350px;
+    background-color: #1ABA76;
+    height: 100%;
+    position: fixed; 
+    overflow: auto; 
+    border: none;
+}
+
+li a {
+    display: block;
+    color: #333333;
+    padding: 20px 60px;
+    text-align: right;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #E5E5E5;
+    color:#333333;
+  }
+
+  #Selec a{
+
+    background-color: #E5E5E5;
+}
+
+#borda{
+    padding-top: 10px;
+    padding-bottom: 8px;
+    border-bottom-right-radius: 25px;
+    background-color: #0EAD69;
+}
+#bordaCell{
+    display: none;    
+    }
+
+  
+#circulo{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #3BCEAC;
+    margin-left: 120px;
+    margin-top: 15px;
+}
+
+#circulo:hover{
+    width: 100px;
+    height: 100px;
+    background-color: #FFD23F;
+}
+
+#logo{
+    margin-left: 15px;
+    margin-top: 20px;
+    width: 65px;
+}
+
+#Icon_Bar{
+    margin-bottom: -70px;
+    margin-left: 10px;
+    width: 15%;
+}
+
+#Cad_Alu a{
+    background-color: #FFD23F;
+}
+
+#Cad_Alu :hover{
+    background-color: #3BCEAC;
+}
+
+#Cad_AluSel a{
+    background-color: #3BCEAC;
+}
+
+input{
+    border: none;
+    border-radius: 10px;
+    background-color: #C4C4C4;
+    padding-left: 15px;
+    font-size: 15px;
+}
+
+#Home{
+padding-top: 20px;
+margin-left: 30%;
+margin-right: 5%;
+}
+
+.Titulo{
+    padding-top: 80px;
+    padding-bottom: 55px;
+}
+
+#form_CadGab{
+    background-color: #E5E5E5;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+
+#tabela{
+    border:none;
+    background-color: #C4C4C4;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+tr label{
+    padding-left: 10px;
+}
+
+input[type="number"]{
+    width: 50%;
+}
+
+input[type="Text"]{
+    width: 50%;
+}
+
+input[type="radio"]{
+    color: #333333;
+    margin-left: 10px;
+    margin-right: 10px;
+    transform: scale(1.5);
+}
+
+.ValorQ{
+    background-color: #E5E5E5;
+}
+
+#Cad_Gab{
+    margin-left: 45%;
+    margin-right: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#envGab{
+    padding:15px;
+    background-color:#FFD23F;
+    margin-left: 40%;
+    
+}
+
+
+
+
+
+@media(max-width: 1100px){
+    ul{
+       display: none;
+    }
+
+   
+    #fundoBordaCell{
+        background-color: #0EAD69;
+    }
+
+    #bordaCell{
+    height: 90px;
+    border-radius: 25px;
+    margin-right: 60px;
+    margin-left: -80px;
+    display: block;
+    background-color: #1ABA76; 
+    }
+
+    #circuloCel{
+        position: relative;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: #3BCEAC;
+        margin-left: 80px;
+        padding: 5px;
+        z-index: 9999;
+    }
+    
+    #circuloCel:hover{
+        width: 100px;
+        height: 100px;
+        background-color: #FFD23F;
+        z-index: 9999;
+    }
+    
+    #logo{
+        margin-left: 15px;
+        margin-top: 20px;
+        width: 65px;
+        z-index: 9999;
+    }
+
+    #listaMobile{
+        margin-top: -20px;
+        margin-left: 60px;
+        padding-top: 20px;
+        padding-right: 800px;
+        font-size: 23px;
+        }
+
+    #liMobile a{
+        text-align: left;
+    }
+    
+    
+    #Home{
+        padding-top: 50px;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+
+    
+    #form_CadGab{
+        background-color: #E5E5E5;
+        border-radius: 15px;   
+    }
+
+    #prova{
+        padding-left:20px;
+        
+    }
+
+    #envGab{
+        padding:15px;
+        background-color:#FFD23F;
+        margin-left: 20%;
+        
+    }
+
+    input[type="radio"]{
+        margin-left: 5px;
+        margin-right: 5px;
+        transform: scale(1.5);
+    }
+
+    input[type="number"]{
+        width: 50%;
+    }
+
+    #tabela{
+        border: none;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 15px;
+        padding-right: 5px;
+        padding-left: 5px;
+        font-size: 20px;
+    }
+
+    #Cad_Gab{
+        margin-left: 25%;
+        margin-right: auto;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+}
